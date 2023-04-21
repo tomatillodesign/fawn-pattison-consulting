@@ -17,6 +17,7 @@
   */
   html, body {
     height: 100%;
+    scroll-behavior: smooth;
   }
   /*
     Typographic tweaks!
@@ -53,6 +54,16 @@
     isolation: isolate;
   }
 
+/* --- Vars --- */
+
+:root {
+  --green: #AACCC9;
+  --maroon: #A45150;
+  --orange: #FBAC65;
+  --black: #09120D;
+  --white: #fff;
+}
+
 body {
     background: mintcream;
     background: radial-gradient(#F5FAF7,#D4E8DD);
@@ -73,6 +84,7 @@ a {
 
 .header {
     font-family: "ff-scala-sans-pro", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-align: center;
     padding: 20px;
@@ -107,7 +119,7 @@ a {
 }
 
 .header .clb-social-icons-wrapper a {
-    color: #97C7AB;
+    color: var(--green);
 }
 
 .header .clb-social-icons-wrapper a:hover {
@@ -123,6 +135,7 @@ a {
 
 .entry-content {
     font-family: "ff-scala-sans-pro", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
@@ -201,6 +214,9 @@ a {
     padding: 12px 20px;
     background: #fff;
     border-radius: 5px;
+    border-left: 4px solid var(--orange);
+    /* border-top-left-radius: 0;
+    border-bottom-left-radius: 0; */
 }
 
 .clb-contact-cta-buttons-wrapper {
@@ -217,7 +233,7 @@ a.clb-contact-btn {
 }
 
 a.clb-contact-btn:hover {
-    color: #97C7AB;
+    color: var(--green);
 }
 
 .entry-content p,
@@ -246,4 +262,66 @@ a.clb-contact-btn:hover {
 .fa-ul {
     z-index: -1;
     position: relative;
+}
+
+a.clb-menu-item {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 2px 10px;
+  background: var(--green);
+  border-radius: 4px;
+}
+
+a.clb-menu-item:nth-of-type(2) {
+  background: var(--orange);
+}
+
+a.clb-menu-item:nth-of-type(3) {
+  background: var(--maroon);
+}
+
+a.clb-menu-item:hover {
+  background-color: var(--black) !important;
+}
+
+a.clb-social-icon {
+  color: var(--black) !important;
+}
+
+.header {
+  background: var(--white);
+  border-left: 4px solid var(--orange);
+}
+
+h1.site-title {
+  height: 1px;
+  color: transparent;
+}
+
+.clb-logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.clb-logo-wrapper img {
+  object-fit: cover;
+}
+
+.clb-teacup-wrapper {
+  display: none;
+}
+
+.clb-featured-image-wrapper img {
+  border: 5px solid var(--maroon);
+}
+
+body {
+  background: radial-gradient(#fff,#E0EDEC);
+}
+
+.clb-section-header-wrapper.is-pinned {
+  background: rgba(170, 204, 201, .8);
 }
