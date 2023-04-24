@@ -269,7 +269,7 @@ a.clb-menu-item {
   text-decoration: none;
   font-size: 17px;
   font-weight: 400;
-  padding: 2px 10px;
+  padding: 4px 10px 2px;
   background: var(--green);
   border-radius: 4px;
 }
@@ -288,6 +288,16 @@ a.clb-menu-item:hover {
 
 a.clb-social-icon {
   color: var(--black) !important;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+a.social-link-twitter:hover {
+  color: #1DA1F2 !important;
+}
+
+a.social-link-linkedin:hover {
+  color: #0077B5 !important;
 }
 
 .header {
