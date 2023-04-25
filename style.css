@@ -159,8 +159,8 @@ a {
 }
 
 .clb-featured-image-wrapper img {
-    /* border-radius: 50%;
-    border: 4px solid #A8D0B9; */
+    border-radius: 50%;
+    border: 4px solid #A8D0B9;
 }
 
 
@@ -325,7 +325,7 @@ h1.site-title {
 }
 
 .clb-featured-image-wrapper img {
-  /* border: 5px solid var(--maroon); */
+  border: 5px solid var(--maroon);
 }
 
 body {
