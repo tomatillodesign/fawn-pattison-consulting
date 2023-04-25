@@ -116,6 +116,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 12px;
+    flex-wrap: wrap;
 }
 
 .header .clb-social-icons-wrapper a {
@@ -334,4 +335,31 @@ body {
 
 .clb-section-header-wrapper.is-pinned {
   background: rgba(170, 204, 201, .8);
+}
+
+
+@media (max-width: 600px) {
+
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .clb-section-header-wrapper .clb-site-title {
+    float: right;
+    line-height: 1.2;
+    font-size: 14px;
+    letter-spacing: -1px;
+  }
+
+
+}
+
+@media (max-width: 369px) {
+
+  .clb-featured-image-wrapper {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
 }
