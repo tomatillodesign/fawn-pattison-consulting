@@ -337,6 +337,19 @@ body {
   background: rgba(170, 204, 201, .8);
 }
 
+footer {
+  background: #fff;
+}
+
+.clb-custom-footer-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clb-footer-section {
+  max-width: 200px;
+}
 
 @media (max-width: 600px) {
 
